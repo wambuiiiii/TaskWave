@@ -6,6 +6,7 @@ body {
     background: #ffffff;
     padding: 0px;
 }
+.nav-link:hover {color: blue;}
 .hero-section {
     background: url('landing.png') no-repeat center center/cover;
     height: 90vh;
@@ -786,7 +787,7 @@ h4 {
         }
 
         .dashimages img:nth-child(1) {
-            left: -160px;
+            left: -210px;
             /*transform: rotate(-10deg);*/
              transform: translateY(-110px);
                top: 0px; /* Move image higher */
@@ -802,7 +803,7 @@ h4 {
         }
 
         .dashimages img:nth-child(3) {
-            left: 160px;
+            left: 230px;
             /*transform: rotate(10deg);*/
              transform: translateY(-110px);
         }
@@ -938,7 +939,8 @@ h4 {
             font-weight: bold;
             margin-top: 10px;
         }
-        .agents-section h2{
+
+          .agents-section h2{
             font-size: 28px;
             font-weight: bold;
             margin: 10px 0;
@@ -957,5 +959,85 @@ h4 {
 
             .agents-container {
                 flex-direction: column;
+            }
+        }
+
+
+
+/*loginpage*/
+        .login-container {
+            display: flex;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .login-form {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .login-form h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .login-form p {
+            font-size: 1rem;
+            color: #292727;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background: #0056b3;
+        }
+
+        .illustration {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .illustration img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+  .login-container h2{
+            font-size: 28px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .illustration {
+                display: none;
             }
         }
